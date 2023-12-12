@@ -1,0 +1,30 @@
+{
+  "name": "chuck",
+  "version": "0.0.1",
+  "description": "Chuck Wordpress Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "babel-loader": "^9.1.2",
+    "esbuild-loader": "^3.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-js-import": "^1.0.6",
+    "gulp-sass": "^5.1.0",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^9.0.0",
+    "sass": "^1.62.1",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^7.0.0"
+  }
+}
