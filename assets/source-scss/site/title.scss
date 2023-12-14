@@ -1,0 +1,6 @@
+.title--roboto-fs24-lh28-mb-20 {
+	font-family: $t_font_roboto;
+	@include fluid-type($min_font_width, $max_font_width, 20px, 24px, 4px);
+	font-weight: 400;
+	font-style: normal;
+}

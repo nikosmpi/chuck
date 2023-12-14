@@ -1,0 +1,7 @@
+// Breakpoint Mixin
+
+@mixin bp($query, $context: all) {
+	@media #{$context} and #{$query} {
+		@content;
+	}
+}

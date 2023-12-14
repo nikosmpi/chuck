@@ -1,0 +1,38 @@
+// Breakpoints
+
+$b_600_sm: '(min-width: 600px)';
+$b_600_sm_max: '(max-width: 600px)';
+
+$b_800_psm: '(min-width: 800px)';
+$b_800_psm_max: '(max-width: 800px)';
+
+$b_1000_md: '(min-width: 1000px)';
+$b_1000_md_max: '(max-width: 1000px)';
+
+$b_1280_lg: '(min-width: 1280px)';
+$b_1280_lg_max: '(max-width: 1280px)';
+
+$b_1440_xl: '(min-width: 1440px)';
+$b_1440_xl_max: '(max-width: 1440px)';
+
+$b_1550_xxl: '(min-width: 1550px)';
+$b_1550_xxl_max: '(max-width: 1550px)';
+
+$grid-columns: 12;
+$grid-gutter-width: 40px;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 600px,
+	psm: 800px,
+	md: 1000px,
+	lg: 1280px,
+	xl: 1440px,
+	xxl: 1550px,
+);
+
+$container-max-widths: (
+	sm: 400px,
+	md: 560px,
+	lg: 860px
+);
