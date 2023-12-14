@@ -1,5 +1,2 @@
 # Chuck 
 ***boilerplate wordpress theme***
-
-
-

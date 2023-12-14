@@ -6,6 +6,7 @@ var babel = require('gulp-babel');
 var webpack = require('webpack-stream');
 var autoprefixer = require('gulp-autoprefixer');
 var stripCssComments = require('gulp-strip-css-comments');
+var sveltePreprocess = require('svelte-preprocess');
 var named = require('vinyl-named');
 
 gulp.task('styles', function () {
@@ -35,7 +36,17 @@ gulp.task('scripts', function () {
 								//loader: 'jsx', // Remove this if you're not using JSX
 								target: 'es2015' // Syntax to compile to (see options below for possible values)
 							}
-						}]
+						},
+						{
+							test: /\.svelte$/,
+							use: {
+								loader: 'svelte-loader',
+								options: {
+									preprocess: sveltePreprocess()
+								},
+							},
+						},
+					]
 				},
 				externals: {
 					jquery: 'jQuery'
@@ -51,7 +62,7 @@ gulp.task('scripts', function () {
 
 gulp.task('default', function () {
 	gulp.watch('assets/source-scss/**/*.scss', gulp.series('styles'));
-	gulp.watch('assets/source-js/**/*.js', gulp.series('scripts'));
+	gulp.watch(['assets/source-js/**/*.js', 'assets/source-js/**/*.svelte'], gulp.series('scripts'));
 });
 
 gulp.task('build', gulp.series('scripts', 'styles'));
