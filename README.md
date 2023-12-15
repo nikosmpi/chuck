@@ -7,3 +7,5 @@
 - [X] Custom Post Type & Custom Taxonomy with one Line
 - [X] Custom Components & Custom Elements 
 - [ ] Theme Settings
+
+Check the [Wiki]([https://duckduckgo.com](https://github.com/nikosmpi/chuck/wiki))
