@@ -8,4 +8,4 @@
 - [X] Custom Components & Custom Elements 
 - [ ] Theme Settings
 
-Check the [Wiki]([https://duckduckgo.com](https://github.com/nikosmpi/chuck/wiki))
+Check the [Wiki](https://github.com/nikosmpi/chuck/wiki)
