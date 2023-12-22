@@ -32,3 +32,13 @@ add_filter('wp_check_filetype_and_ext', 'chuck_svg_mimetype', 10, 4);
 
 // ACF JSON Save Point
 add_filter('acf/settings/save_json', 'chuck_acf_json_save_point');
+
+// Disable Comments
+add_action('admin_init', 'chuck_disable_comments_post_types_support');
+add_filter('comments_open', 'chuck_disable_comments_status', 20, 2);
+add_filter('pings_open', 'chuck_disable_comments_status', 20, 2);
+add_filter('comments_array', 'chuck_disable_comments_hide_existing_comments', 10, 2);
+add_action('admin_menu', 'chuck_disable_comments_admin_menu');
+add_action('admin_init', 'chuck_disable_comments_admin_menu_redirect');
+add_action('admin_init', 'chuck_disable_comments_dashboard');
+add_action('init', 'chuck_disable_comments_admin_bar');
